@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern SaaS Homepage</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: white;
+      color: black;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: blue;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: lightslategrey;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: blue;
+    }
+
+    .hero {
+      padding: 80px 10%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: lightslategray;
+    }
+
+    .hero button {
+      padding: 14px 28px;
+      border: none;
+      background: blue;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: blue;
+    }
+
+    .hero-image {
+      background: linear-gradient(135deg, blue, lightblue);
+      height: 300px;
+      border-radius: 16px;
+    }
+
+    .features {
+      padding: 80px 10%;
+      background: white;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card {
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 10px;
+      color: blue;
+    }
+
+    .cta {
+      padding: 70px 10%;
+      background: blue;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      background: white;
+      color: blue;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      background: black;
+      color: white;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SaaSify</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Grow Your Business with Smart SaaS Solutions</h1>
+      <p>Manage, analyze, and scale your operations using our powerful cloud-based platform.</p>
+      <button>Get Started Free</button>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>🚀 Fast Performance</h3>
+        <p>Optimized infrastructure ensures speed and reliability.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🔒 Secure Data</h3>
+        <p>Enterprise-grade security for your business data.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📊 Analytics</h3>
+        <p>Real-time insights to make smarter decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Start Your Free Trial Today</h2>
+    <button>Sign Up Now</button>
+  </section>
+
+  <footer>
+    © 2025 SaaSify. All rights reserved.
+  </footer>
+
+</body>
+</html>
