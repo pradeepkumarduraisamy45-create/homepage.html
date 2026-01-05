@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+.chat-app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background: white;
+  border-right: 1px solid white;
+  padding: 15px;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+}
+
+.user {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.user:hover, .user.active {
+  background: white;
+}
+
+/* Chat Area */
+.chat-area {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 15px;
+  background: white;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+
+.messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.received {
+  background: white;
+}
+
+.sent {
+  background: blue;
+  color: white;
+  margin-left: auto;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: white;
+  border-top: 1px solid white;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  border: none;
+  background: blue;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
